@@ -351,6 +351,8 @@
 
     // 初始化音频
     const audio = new Audio();
+    audio.preload = "auto";      // 自动预加载
+    audio.buffered = true;       // 开启缓冲
     let currentSongIndex = 0;
     let isPlaying = false;
     let isMuted = false;
